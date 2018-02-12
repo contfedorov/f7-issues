@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--
+    Customize this policy to fit your own app's needs. For more guidance, see:
+        https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+    Some notes:
+        * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+        * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+        * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * Enable inline JS: add 'unsafe-inline' to default-src
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#2196f3">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>My App</title>
+
+    <link rel="stylesheet" href="framework7/css/framework7.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar"></div>
+
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main ios-edges">
+        <!-- Page, data-name contains page name which can be used in callbacks -->
+        <div class="page page-with-subnavbar" data-name="home">
+
+            <!-- Top Navbar -->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="title sliding">My App</div>
+
+                    <div class="subnavbar">
+                        <div class="subnavbar-inner">
+                            <div class="segmented">
+                                <a href="#tab_1" class="button tab-link tab-link-active">TAB 1</a>
+                                <a href="#tab_2" class="button tab-link">TAB 2</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tabs-swipeable-wrap">
+                <div class="tabs">
+
+                    <div id="tab_1" class="page-content tab tab-active">
+                        <div class="list">
+                            <ul>
+
+                                <li>
+
+                                    <a href="#" class="item-link item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 1</div>
+                                                <div class="item-subtitle">Value 1</div>
+                                            </div>
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 2</div>
+                                                <div class="item-subtitle">Value 2</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 3</div>
+                                                <div class="item-subtitle">Value 3</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 4</div>
+                                                <div class="item-subtitle">Value 4</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 5</div>
+                                                <div class="item-subtitle">Value 5</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 6</div>
+                                                <div class="item-subtitle">Value 6</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 7</div>
+                                                <div class="item-subtitle">Value 7</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 8</div>
+                                                <div class="item-subtitle">Value 8</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 9</div>
+                                                <div class="item-subtitle">Value 9</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 10</div>
+                                                <div class="item-subtitle">Value 10</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 11</div>
+                                                <div class="item-subtitle">Value 11</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="tab_2" class="page-content tab">
+                        <div class="list">
+                            <ul>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 12</div>
+                                                <div class="item-subtitle">Value 12</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 13</div>
+                                                <div class="item-subtitle">Value 13</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 14</div>
+                                                <div class="item-subtitle">Value 14</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 15</div>
+                                                <div class="item-subtitle">Value 15</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 16</div>
+                                                <div class="item-subtitle">Value 16</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 17</div>
+                                                <div class="item-subtitle">Value 17</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 18</div>
+                                                <div class="item-subtitle">Value 18</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 19</div>
+                                                <div class="item-subtitle">Value 19</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 20</div>
+                                                <div class="item-subtitle">Value 20</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 21</div>
+                                                <div class="item-subtitle">Value 21</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+
+                                    <div class="item-content myItemContent">
+
+                                        <div class="item-media">
+                                            <img src="images/logo.png" class="myIcon">
+                                        </div>
+                                        <div class="item-inner">
+                                            <div>
+                                                <div class="item-title">Item 22</div>
+                                                <div class="item-subtitle">Value 22</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Framework7 library -->
+<script src="framework7/js/framework7.min.js"></script>
+
+<!-- App routes -->
+<script src="js/routes.js"></script>
+
+<!-- Your custom app scripts -->
+<script src="js/app.js"></script>
+</body>
+</html>

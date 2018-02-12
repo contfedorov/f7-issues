@@ -1,0 +1,10 @@
+/* Your app styles here */
+
+.list .item-content.myItemContent {
+    min-height: 75px;
+}
+
+.myIcon {
+    width: 36px;
+    height: 36px;
+}
