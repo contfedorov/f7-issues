@@ -348,7 +348,7 @@ html.with-statusbar.device-iphone-x .panel {
   height: 100%;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  contain: layout size style;
+  /*contain: layout size style;*/
 }
 .page.stacked {
   display: none;
@@ -364,8 +364,8 @@ html.with-statusbar.device-iphone-x .panel {
   height: 100%;
   position: relative;
   z-index: 1;
-  contain: layout size style;
-  will-change: scroll-position;
+  /*contain: layout size style;*/
+  /*will-change: scroll-position;*/
 }
 .ios .page-shadow-effect {
   position: absolute;
@@ -374,7 +374,7 @@ html.with-statusbar.device-iphone-x .panel {
   bottom: 0;
   z-index: -1;
   content: '';
-  will-change: opacity;
+  /*will-change: opacity;*/
   opacity: 0;
   right: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(10%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.01)), to(rgba(0, 0, 0, 0.2)));
@@ -391,7 +391,7 @@ html.with-statusbar.device-iphone-x .panel {
   content: '';
   opacity: 0;
   z-index: 10000;
-  will-change: opacity;
+  /*will-change: opacity;*/
 }
 .ios .router-dynamic-navbar-inside .page-shadow-effect,
 .ios .router-dynamic-navbar-inside .page-opacity-effect {
@@ -429,7 +429,7 @@ html.with-statusbar.device-iphone-x .panel {
 .ios .router-transition-backward .page-current,
 .ios .router-transition-forward .page-previous:not(.stacked),
 .ios .router-transition-backward .page-previous:not(.stacked) {
-  will-change: transform;
+  /*will-change: transform;*/
   pointer-events: none;
 }
 .ios .router-transition-css-forward .page-next {
@@ -443,7 +443,7 @@ html.with-statusbar.device-iphone-x .panel {
   bottom: 0;
   z-index: -1;
   content: '';
-  will-change: opacity;
+  /*will-change: opacity;*/
   opacity: 0;
   right: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(10%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.01)), to(rgba(0, 0, 0, 0.2)));
@@ -466,7 +466,7 @@ html.with-statusbar.device-iphone-x .panel {
   content: '';
   opacity: 0;
   z-index: 10000;
-  will-change: opacity;
+  /*will-change: opacity;*/
   -webkit-animation: ios-page-current-to-previous-opacity 400ms forwards;
   animation: ios-page-current-to-previous-opacity 400ms forwards;
 }
@@ -476,7 +476,7 @@ html.with-statusbar.device-iphone-x .panel {
 }
 .ios .router-transition-css-backward .page-previous,
 .ios .router-transition-css-backward .page-current {
-  will-change: transform;
+  /*will-change: transform;*/
   pointer-events: none;
 }
 .ios .router-transition-css-backward .page-previous {
@@ -493,7 +493,7 @@ html.with-statusbar.device-iphone-x .panel {
   content: '';
   opacity: 0;
   z-index: 10000;
-  will-change: opacity;
+  /*will-change: opacity;*/
   -webkit-animation: ios-page-previous-to-current-opacity 400ms forwards;
   animation: ios-page-previous-to-current-opacity 400ms forwards;
 }
@@ -508,7 +508,7 @@ html.with-statusbar.device-iphone-x .panel {
   bottom: 0;
   z-index: -1;
   content: '';
-  will-change: opacity;
+  /*will-change: opacity;*/
   opacity: 0;
   right: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(10%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.01)), to(rgba(0, 0, 0, 0.2)));
@@ -671,7 +671,7 @@ html.with-statusbar.device-iphone-x .panel {
 }
 .md .page {
   background: #fff;
-  contain: strict;
+  /*contain: strict;*/
 }
 .md .page-next {
   -webkit-transform: translate3d(0, 56px, 0);
@@ -691,7 +691,7 @@ html.with-statusbar.device-iphone-x .panel {
 .md .router-transition-backward .page-next,
 .md .router-transition-forward .page-current,
 .md .router-transition-backward .page-current {
-  will-change: transform, opacity;
+  /*will-change: transform, opacity;*/
 }
 .md .router-transition-css-forward .page-next {
   -webkit-animation: md-page-next-to-current 250ms forwards;
@@ -6603,8 +6603,8 @@ i.icon {
   opacity: 0;
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
-  will-change: opacity;
-  contain: strict;
+  /*will-change: opacity;*/
+  /*contain: strict;*/
   z-index: 10500;
 }
 .custom-modal-backdrop.not-animated {
@@ -6628,8 +6628,8 @@ i.icon {
   opacity: 0;
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
-  will-change: opacity;
-  contain: strict;
+  /*will-change: opacity;*/
+  /*contain: strict;*/
 }
 .dialog-backdrop.not-animated {
   -webkit-transition-duration: 0ms;
@@ -6654,8 +6654,8 @@ i.icon {
   transition-property: transform, opacity;
   transition-property: transform, opacity, -webkit-transform;
   display: none;
-  contain: content;
-  will-change: transform, opacity;
+  /*contain: content;*/
+  /*will-change: transform, opacity;*/
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
@@ -7123,8 +7123,8 @@ input[type="button"].md .dialog-button {
   opacity: 0;
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
-  will-change: opacity;
-  contain: strict;
+  /*will-change: opacity;*/
+  /*contain: strict;*/
   z-index: 10500;
 }
 .popup-backdrop.not-animated {
@@ -7141,8 +7141,8 @@ input[type="button"].md .dialog-button {
   top: 0;
   width: 100%;
   height: 100%;
-  contain: strict;
-  will-change: transform;
+  /*contain: strict;*/
+  /*will-change: transform;*/
   display: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -7251,8 +7251,8 @@ html.with-modal-popup .framework7-root > .panel .page-content {
   top: 0;
   width: 100%;
   height: 100%;
-  contain: strict;
-  will-change: transform;
+  /*contain: strict;*/
+  /*will-change: transform;*/
   display: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -7422,8 +7422,8 @@ html.with-statusbar.md:not(.device-ios):not(.device-android) .login-screen {
   opacity: 0;
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
-  will-change: opacity;
-  contain: strict;
+  /*will-change: opacity;*/
+  /*contain: strict;*/
 }
 .popover-backdrop.not-animated {
   -webkit-transition-duration: 0ms;
@@ -7444,7 +7444,7 @@ html.with-statusbar.md:not(.device-ios):not(.device-android) .login-screen {
   display: none;
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
-  contain: layout style;
+  /*contain: layout style;*/
 }
 .popover .list {
   margin: 0;
@@ -7777,8 +7777,8 @@ html.with-statusbar.md:not(.device-ios):not(.device-android) .login-screen {
   opacity: 0;
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
-  will-change: opacity;
-  contain: strict;
+  /*will-change: opacity;*/
+  /*contain: strict;*/
 }
 .actions-backdrop.not-animated {
   -webkit-transition-duration: 0ms;
@@ -7798,7 +7798,7 @@ html.with-statusbar.md:not(.device-ios):not(.device-android) .login-screen {
   transform: translate3d(0, 100%, 0);
   display: none;
   max-height: 100%;
-  contain: content;
+  /*contain: content;*/
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   -webkit-transition-property: -webkit-transform;
@@ -8298,8 +8298,8 @@ html.with-statusbar.md:not(.device-ios):not(.device-android) .login-screen {
   opacity: 0;
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
-  will-change: opacity;
-  contain: strict;
+  /*will-change: opacity;*/
+  /*contain: strict;*/
   z-index: 10500;
 }
 .sheet-backdrop.not-animated {
@@ -8316,7 +8316,7 @@ html.with-statusbar.md:not(.device-ios):not(.device-android) .login-screen {
   bottom: 0;
   width: 100%;
   height: 260px;
-  will-change: transform;
+  /*will-change: transform;*/
   display: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -8328,7 +8328,7 @@ html.with-statusbar.md:not(.device-ios):not(.device-android) .login-screen {
   transform: translate3d(0, 100%, 0);
   background: #fff;
   z-index: 12500;
-  contain: strict;
+  /*contain: strict;*/
 }
 .sheet-modal.modal-in,
 .sheet-modal.modal-out {
@@ -8646,8 +8646,8 @@ html.with-statusbar.md:not(.device-ios):not(.device-android) .toast-top {
   visibility: hidden;
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
-  will-change: opacity;
-  contain: strict;
+  /*will-change: opacity;*/
+  /*contain: strict;*/
   visibility: visible;
   opacity: 0;
   background: none;
@@ -9232,8 +9232,8 @@ html.with-statusbar.md:not(.device-ios):not(.device-android) .framework7-root > 
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   display: block;
-  will-change: transform;
-  contain: strict;
+  /*will-change: transform;*/
+  /*contain: strict;*/
 }
 .progressbar-infinite.color-multi {
   background: none !important;
@@ -11642,7 +11642,7 @@ html.device-android-4 .accordion-item-content {
   height: 100%;
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
-  will-change: transform;
+  /*will-change: transform;*/
 }
 .tabs-animated-wrap > .tabs > .tab {
   width: 100%;
