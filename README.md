@@ -14,3 +14,5 @@ Tested via:
 - iPhone 6 Plus, iOS 11.4.1
 - iPhone 6 Plus (simulator), iOS 10.3.1
 - iPad mini 2, iOS 11.4.1
+
+With Framework7 v3.1.0 works well.
