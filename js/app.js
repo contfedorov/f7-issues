@@ -31,3 +31,24 @@ var app  = new Framework7({
 var mainView = app.views.create('.view-main', {
   url: '/'
 });
+
+$$("#openPopup").click(function () {
+    app.request.get("./pages/accordion-popup.html", function (content) {
+        app.popup.create({
+            el: '<div class="popup">' + content + '</div>',
+            on: {
+                opened: function () {
+                    $$('a.back').click(function () {
+                        app.popup.close();
+                    });
+                }
+            }
+        }).open();
+
+        var viewId = "accordionView";
+        app.views.create('#' + viewId, {
+            stackPages: true,
+            name: viewId
+        });
+    });
+});
