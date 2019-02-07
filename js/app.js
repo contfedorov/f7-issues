@@ -31,3 +31,32 @@ var app  = new Framework7({
 var mainView = app.views.create('.view-main', {
   url: '/'
 });
+
+function photoBrowserPageInit(e, page) {
+    var template = Template7.compile($$("#photoBrowserPageTemplate").html());
+
+    var data = [{
+        url: "http://lorempixel.com/1920/1080/"
+    }, {
+        url: "http://lorempixel.com/1920/1080/"
+    }, {
+        url: "http://lorempixel.com/1920/1080/"
+    }, {
+        url: "http://lorempixel.com/1920/1080/"
+    }, {
+        url: "http://lorempixel.com/1920/1080/"
+    }];
+
+    $$("#photoBrowserPageContent").html(template(data));
+
+    var galleryTop = new Swiper('.gallery-top', {
+        preloadImages: false, // Disable preloading of all images
+        lazy: true, // Enable lazy loading
+        zoom: true // Enable zoom
+    });
+
+    $$("#photoBrowserDeleteButton").click(function () {
+        var slideIndex = galleryTop.realIndex;
+        galleryTop.removeSlide(slideIndex);
+    });
+}

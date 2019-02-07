@@ -40,9 +40,32 @@
                 </div>
             </div>
 
-            <div class="page-content">
-                <div class="block">Placeholder</div>
+            <div class="page-content" id="photoBrowserPageContent">
             </div>
+
+            <script id="photoBrowserPageTemplate" type="text/template7">
+
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        {{#each this}}
+                        <div class="swiper-slide">
+                            <div class="swiper-zoom-container">
+                                <img data-src={{url}} class="swiper-lazy">
+                            </div>
+                            <div class="preloader swiper-lazy-preloader"></div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+
+                <div >
+                    <a href="#" class="link" id="photoBrowserDeleteButton"
+                       style="width: 80px; height: 40px; background: #00d449; left: 90%;">
+                        Delete
+                    </a>
+                </div>
+
+            </script>
 
         </div>
     </div>
