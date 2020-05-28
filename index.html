@@ -42,9 +42,32 @@
 
             <!-- Scrollable page content -->
             <div class="page-content">
-                <p>Page content goes here</p>
-                <!-- Link to another page -->
-                <a href="/about/">About app</a>
+                <div class="block">
+                    <a href="#tab1" class="tab-link">Tab 1</a>
+                    <a href="#tab2" class="tab-link">Tab 2</a>
+                    <a href="#tab3" class="tab-link tab-link-active">Tab 3</a>
+                </div>
+
+                <div class="tabs-animated-wrap">
+
+                    <!-- Tabs, tabs wrapper -->
+                    <div class="tabs">
+                        <!-- Tab 1, active by default -->
+                        <div id="tab1" class="tab ">
+                            ... Tab 1 content ...
+                        </div>
+
+                        <!-- Tab 2 -->
+                        <div id="tab2" class="tab">
+                            ... Tab 2 content ...
+                        </div>
+
+                        <!-- Tab 3 -->
+                        <div id="tab3" class="tab tab-active">
+                            ... Tab 3 content ...
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
