@@ -1,4 +1,7 @@
 *xcuserdata*
 *.idea*
 **.DS_Store
-
+*xcshareddata*
+node_modules
+platforms
+plugins
