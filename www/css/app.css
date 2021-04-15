@@ -1,5 +1,10 @@
 /* Your app styles here */
 
+html, body {
+    /* on iOS: use full viewport height (vh units) instead of full safe area (% units) */
+    height: 100vh;
+}
+
 .list .item-content.myItemContent {
     min-height: 75px;
 }
