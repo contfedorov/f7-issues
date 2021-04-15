@@ -13,3 +13,11 @@ html, body {
     width: 36px;
     height: 36px;
 }
+
+#customSearchResults {
+    position: absolute;
+    top: calc(var(--f7-navbar-height) + var(--f7-safe-area-top));
+    left: 10px;
+    width: calc(100% - 20px);
+    z-index: 1000;
+}

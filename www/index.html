@@ -27,9 +27,34 @@
             <div class="navbar">
                 <div class="navbar-bg"></div>
                 <div class="navbar-inner">
-                    <div class="title">Awesome App</div>
+                    <div class="title sliding">Sample app</div>
+                    <div class="right">
+                        <a href="#" class="link icon-only searchbar-enable" id="appSearchButton" data-searchbar="#mainSearchbar">
+                            <!-- used icon available by default -->
+                            <i class="icon icon-back"></i>
+                        </a>
+                    </div>
+
+                    <form class="searchbar searchbar-expandable" id="mainSearchbar">
+                        <div class="searchbar-inner">
+                            <div class="searchbar-input-wrap">
+                                <input type="search"
+                                       placeholder="Search"
+                                       autocomplete="off"
+                                       autocorrect="off"
+                                       autocapitalize="off"
+                                       spellcheck="false"
+                                       id="mainSearchbarInput"/>
+                                <i class="searchbar-icon"></i>
+                                <span class="input-clear-button"></span>
+                            </div>
+                            <span class="searchbar-disable-button">Cancel</span>
+                        </div>
+                    </form>
                 </div>
             </div>
+
+            <div id="customSearchResults"></div>
 
             <!-- Bottom Toolbar -->
             <div class="toolbar toolbar-bottom">
