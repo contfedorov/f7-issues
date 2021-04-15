@@ -6,8 +6,8 @@ var app  = new Framework7({
   root: '#app', // App root element
   id: 'io.framework7.testapp', // App bundle ID
   name: 'Framework7', // App name
-  //theme: 'auto', // Automatic theme detection
-    theme: 'ios',
+  theme: 'auto', // Automatic theme detection
+    // theme: 'ios',
   // App root data
   data: function () {
     return {
